@@ -9,7 +9,7 @@ const SearchPage = () => {
   const { query } = useRouter();
 
   useEffect(() => {
-    document.getElementById("search-gif").enterKeyHint;
+    document.getElementById("search-gif").focus();
   }, []);
 
   useEffect(() => {

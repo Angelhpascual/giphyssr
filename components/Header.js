@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 
 const Header = () => {
   return (
-    <div className="flex justify-between h-20 items-center  bg-purple-500">
+    <div className="flex justify-between h-24 items-center  bg-purple-500">
       <Link href="/">
         <a>
           <Logo />
@@ -65,11 +65,9 @@ function Search() {
         id="search-gif"
         type="search"
         name="search"
-        placeholder="Search"
+        placeholder="Search..."
         className="bg-white h-10  px-5 pr-10 ml-20 rounded-full text-sm focus:outline-none"
-        onChange={(e) => {
-          setSearchStr(e.target.value);
-        }}
+        onChange={(e) => setSearchStr(e.target.value)}
       />
       <button type="submit" className="absolute right-0 top-0 mt-3 mr-4">
         <svg
