@@ -59,13 +59,10 @@ function Search() {
     setLoad(true);
   }, [searchStr]);
 
-  console.log(router.query);
-  console.log(searchStr);
-
   return (
     <div className="relative text-gray-600">
       <input
-        value={router.query.query}
+        value={searchStr}
         id="search-gif"
         type="search"
         name="search"

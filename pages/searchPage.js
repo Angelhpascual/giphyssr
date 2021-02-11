@@ -29,7 +29,7 @@ const SearchPage = () => {
   console.log("SON LOS GIFS", gifs);
 
   return (
-    <Layout>
+    <Layout title="Search">
       {gifs ? (
         <div>
           <ul className="pt-5">
@@ -43,7 +43,6 @@ const SearchPage = () => {
               ))}
             </li>
           </ul>
-          )}
         </div>
       ) : (
         <div>No hay gifs</div>
